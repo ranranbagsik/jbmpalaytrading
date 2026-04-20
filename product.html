@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product | JBM Palay Trading</title>
+  <link rel="icon" type="image/png" href="logo/p5.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="product.css">
+  <link rel="stylesheet" href="theme.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg glass-navbar fixed-top">
+  <div class="container">
+
+    <a class="navbar-brand" href="index.html">
+      <img src="logo/p5.png" alt="JBM Logo" class="navbar-logo">
+    </a>
+
+    <button class="navbar-toggler custom-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+  <ul class="navbar-nav ms-auto">
+    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+    <li class="nav-item"><a class="nav-link active" href="product.html">Products</a></li>
+    <li class="nav-item"><a class="nav-link" href="process.html">Process</a></li>
+    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+  </ul>
+
+  <div class="theme-toggle ms-lg-3 mt-3 mt-lg-0">
+    <button id="themeToggle" class="theme-btn" type="button" aria-label="Toggle dark mode">
+      🌙
+    </button>
+  </div>
+</div>
+</nav>
+
+<!-- LOADER -->
+<div id="loader">
+  <img src="logo/p5.png" alt="Loading..." class="loader-logo">
+</div>
+
+
+
+<!-- HERO -->
+<section class="hero text-center text-white d-flex align-items-center">
+  <div class="container">
+    <div class="glass-box p-5">
+      <h1 class="fw-bold">Premium Quality Rice Supplier</h1>
+      <p class="lead">Wholesale & Retail • Fast Delivery • Affordable Prices</p>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 text-center variety-section">
+  <div class="variety-wrapper">
+
+  <div class="variety-card">
+    <img src="variety/v1.jpg" class="variety-img" alt="RC 604">
+    <div class="overlay-content">
+      <h4>RC 604</h4>
+    </div>
+  </div>
+
+  <div class="variety-card">
+    <img src="variety/v2.jpg" class="variety-img" alt="RC 480">
+    <div class="overlay-content">
+      <h4>RC 480</h4>
+    </div>
+  </div>
+
+  <div class="variety-card">
+    <img src="variety/v3.jpg" class="variety-img" alt="RC 402">
+    <div class="overlay-content">
+      <h4>RC 402</h4>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<div class="dec-palay">
+  <p>Aside from palay trading, We also include milled rice as part of our palay trading services.</p> <br>
+  <p>At JBM Rice, we provide quality rice to Filipino households and businesses. </p>
+  <p>We source from local farmers, carefully dry the palay, and process it through milling in Intercity, Bocaue to ensure high quality. </p>
+  <p>From farm to milling, we handle every step with care while offering affordable rice in both bulk and retail.</p>
+</div>
+<!-- PRODUCT SECTION -->
+<section class="py-5 product-section">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- PRODUCT 1 -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <div class="img-box" data-bs-toggle="modal" data-bs-target="#modal1">
+            <img src="images/rice1.jpg" alt="Jasmine Rice" class="img-fluid">
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCT 2 -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <div class="img-box" data-bs-toggle="modal" data-bs-target="#modal2">
+            <img src="images/p2.jpg" alt="Super Denorado" class="img-fluid">
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCT 3 -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <div class="img-box" data-bs-toggle="modal" data-bs-target="#modal3">
+            <img src="images/rice3.jpg" alt="Jasmine Yellow" class="img-fluid">
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCT 4 -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <div class="img-box" data-bs-toggle="modal" data-bs-target="#modal4">
+            <img src="images/p9.jpg" alt="Mindoro Rice" class="img-fluid">
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCT 5 -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <div class="img-box" data-bs-toggle="modal" data-bs-target="#modal5">
+            <img src="images/rice5.jpg" alt="Buko Pandan Rice" class="img-fluid">
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCT 6 -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <div class="img-box" data-bs-toggle="modal" data-bs-target="#modal6">
+            <img src="images/rice6.jpg" alt="Dinorado Rice" class="img-fluid">
+          </div>
+        </div>
+      </div>
+</section>
+
+<!-- MODAL 1 -->
+<div class="modal fade" id="modal1" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content glass-modal p-3">
+      <button class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"></button>
+
+      <div class="row g-3 align-items-center">
+        <div class="col-md-6 position-relative">
+          <img src="images/rice1.jpg" class="modal-img" alt="Jasmine Rice">
+          <div class="product-name">Jasmine Rice</div>
+        </div>
+
+        <div class="col-md-6">
+          <h1>Jasmine</h1>
+          <ul class="product-list">
+            <li>Naturally Fragrant Aroma</li>
+            <li>Soft & Fluffy</li>
+            <li>Perfect for everyday meals</li>
+            <li>Available in 25 kilos</li>
+          </ul>
+
+          <div class="d-flex gap-2 flex-wrap mt-3">
+  <a href="https://m.me/jmangune?text=Good%20day!%20I%20would%20like%20to%20order%20Jasmine.%20Please%20send%20details.%20Thank%20you!" target="_blank" class="btn btn-order">Owner</a>
+  <a href="https://m.me/balatbat27?text=Good%20day!%20I%20would%20like%20to%20order%20Jasmine.%20Please%20send%20details.%20Thank%20you!" target="_blank" class="btn btn-order">Assistant</a>
+</div>
+        </div>
+      </div>
+
+      <div class="modal-footer d-flex justify-content-between">
+        <button class="btn btn-nav" data-bs-target="#modal10" data-bs-toggle="modal" data-bs-dismiss="modal">Previous</button>
+        <button class="btn btn-nav" data-bs-target="#modal2" data-bs-toggle="modal" data-bs-dismiss="modal">Next</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL 2 -->
+<div class="modal fade" id="modal2" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content glass-modal p-3">
+      <button class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"></button>
+
+      <div class="row g-3 align-items-center">
+        <div class="col-md-6 position-relative">
+          <img src="images/p2.jpg" class="modal-img" alt="Super Denorado">
+          <div class="product-name">Super Denorado</div>
+        </div>
+
+        <div class="col-md-6">
+          <h1>Super Denorado</h1>
+          <ul class="product-list">
+            <li>Extra Aromatic</li>
+            <li>Soft & Tender</li>
+            <li>Available in 5–25kg</li>
+          </ul>
+
+          <div class="d-flex gap-2 flex-wrap mt-3">
+  <a href="https://m.me/jmangune?text=Good%20day!%20I%20would%20like%20to%20order%20Super%20Denorado.%20Please%20send%20details.%20Thank%20you!" target="_blank" class="btn btn-order">Owner</a>
+  <a href="https://m.me/balatbat27?text=Good%20day!%20I%20would%20like%20to%20order%20Super%20Denorado.%20Please%20send%20details.%20Thank%20you!" target="_blank" class="btn btn-order">Assistant</a>
+</div>
+        </div>
+      </div>
+
+      <div class="modal-footer d-flex justify-content-between">
+        <button class="btn btn-nav" data-bs-target="#modal1" data-bs-toggle="modal" data-bs-dismiss="modal">Previous</button>
+        <button class="btn btn-nav" data-bs-target="#modal3" data-bs-toggle="modal" data-bs-dismiss="modal">Next</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL 3 -->
+<div class="modal fade" id="modal3" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content glass-modal p-3">
+      <button class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"></button>
+
+      <div class="row g-3 align-items-center">
+        <div class="col-md-6 position-relative">
+          <img src="images/rice3.jpg" class="modal-img" alt="Jasmine Yellow">
+          <div class="product-name">Jasmine Yellow</div>
+        </div>
+
+        <div class="col-md-6">
+          <h1>Jasmine Yellow</h1>
+          <ul class="product-list">
+            <li>Extra Aromatic and Premium Quality</li>
+            <li>Soft, Tender, and Slightly Sticky</li>
+            <li>Masarap kahit Malamig</li>
+            <li>Perfect for family meals</li>
+            <li>Available in 5, 10, & 25 Kilos</li>
+          </ul>
+
+          <div class="d-flex gap-2 flex-wrap mt-3">
+  <a href="https://m.me/jmangune?text=Good%20day!%20I%20would%20like%20to%20order%20Jasmine%20Yellow.%20Please%20send%20details.%20Thank%20you!" target="_blank" class="btn btn-order">Owner</a>
+  <a href="https://m.me/balatbat27?text=Good%20day!%20I%20would%20like%20to%20order%20Jasmine%20Yellow.%20Please%20send%20details.%20Thank%20you!" target="_blank" class="btn btn-order">Assistant</a>
+</div>
+        </div>
+      </div>
+
+      <div class="modal-footer d-flex justify-content-between">
+        <button class="btn btn-nav" data-bs-target="#modal2" data-bs-toggle="modal" data-bs-dismiss="modal">Previous</button>
+        <button class="btn btn-nav" data-bs-target="#modal4" data-bs-toggle="modal" data-bs-dismiss="modal">Next</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL 4 -->
+<div class="modal fade" id="modal4" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content glass-modal p-3">
+      <button class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"></button>
+
+      <div class="row g-3 align-items-center">
+        <div class="col-md-6 position-relative">
+          <img src="images/p9.jpg" class="modal-img" alt="Mindoro Rice">
+          <div class="product-name">Mindoro Rice</div>
+        </div>
+
+        <div class="col-md-6">
+          <h1>Mindoro Rice</h1>
+          <ul class="product-list">
+            <li>Fresh & Aromatic</li>
+            <li>High Quality Grains</li>
+          </ul>
+
+          <div class="d-flex gap-2 flex-wrap mt-3">
+  <a href="https://m.me/jmangune?text=Good%20day!%20I%20would%20like%20to%20order%20Mindoro%20Rice.%20Please%20send%20details.%20Thank%20you!" target="_blank" class="btn btn-order">Owner</a>
+  <a href="https://m.me/balatbat27?text=Good%20day!%20I%20would%20like%20to%20order%20Mindoro%20Rice.%20Please%20send%20details.%20Thank%20you!" target="_blank" class="btn btn-order">Assistant</a>
+</div>
+        </div>
+      </div>
+
+      <div class="modal-footer d-flex justify-content-between">
+        <button class="btn btn-nav" data-bs-target="#modal3" data-bs-toggle="modal" data-bs-dismiss="modal">Previous</button>
+        <button class="btn btn-nav" data-bs-target="#modal5" data-bs-toggle="modal" data-bs-dismiss="modal">Next</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL 5 -->
+<div class="modal fade" id="modal5" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content glass-modal p-3">
+      <button class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"></button>
+
+      <div class="row g-3 align-items-center">
+        <div class="col-md-6 position-relative">
+          <img src="images/rice5.jpg" class="modal-img" alt="Buko Pandan Rice">
+          <div class="product-name">Buko Pandan Rice</div>
+        </div>
+
+        <div class="col-md-6">
+          <h1>Buko Pandan</h1>
+          <ul class="product-list">
+            <li>Unique Aroma</li>
+            <li>Soft & Fluffy</li>
+          </ul>
+
+          <div class="d-flex gap-2 flex-wrap mt-3">
+  <a href="https://m.me/jmangune?text=Good%20day!%20I%20would%20like%20to%20order%20Buko%20Pandan.%20Please%20send%20details.%20Thank%20you!" target="_blank" class="btn btn-order">Owner</a>
+  <a href="https://m.me/balatbat27?text=Good%20day!%20I%20would%20like%20to%20order%20Buko%20Pandan.%20Please%20send%20details.%20Thank%20you!" target="_blank" class="btn btn-order">Assistant</a>
+</div>
+        </div>
+      </div>
+
+      <div class="modal-footer d-flex justify-content-between">
+        <button class="btn btn-nav" data-bs-target="#modal4" data-bs-toggle="modal" data-bs-dismiss="modal">Previous</button>
+        <button class="btn btn-nav" data-bs-target="#modal6" data-bs-toggle="modal" data-bs-dismiss="modal">Next</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL 6 -->
+<div class="modal fade" id="modal6" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content glass-modal p-3">
+      <button class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"></button>
+
+      <div class="row g-3 align-items-center">
+        <div class="col-md-6 position-relative">
+          <img src="images/rice6.jpg" class="modal-img" alt="Dinorado Rice">
+          <div class="product-name">Dinorado Rice</div>
+        </div>
+
+        <div class="col-md-6">
+          <h1>Dinorado</h1>
+          <ul class="product-list">
+            <li>Rich Aroma</li>
+            <li>Premium Taste</li>
+          </ul>
+
+          <div class="d-flex gap-2 flex-wrap mt-3">
+  <a href="https://m.me/jmangune?text=Good%20day!%20I%20would%20like%20to%20order%20Dinorado.%20Please%20send%20details.%20Thank%20you!" target="_blank" class="btn btn-order">Owner</a>
+  <a href="https://m.me/balatbat27?text=Good%20day!%20I%20would%20like%20to%20order%20Dinorado.%20Please%20send%20details.%20Thank%20you!" target="_blank" class="btn btn-order">Assistant</a>
+</div>
+        </div>
+      </div>
+
+      <div class="modal-footer d-flex justify-content-between">
+        <button class="btn btn-nav" data-bs-target="#modal5" data-bs-toggle="modal" data-bs-dismiss="modal">Previous</button>
+        <button class="btn btn-nav" data-bs-target="#modal7" data-bs-toggle="modal" data-bs-dismiss="modal">Next</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<a href="https://m.me/jmangune" class="chat-btn" target="_blank">💬</a>
+
+
+<!-- FOOTER -->
+<footer class="pt-5 pb-3">
+  <div class="container">
+    <div class="row text-center text-md-start">
+
+      <div class="col-md-4 mb-4">
+        <h5>JBM Rice Supplier</h5>
+        <p>
+          Trusted supplier of high-quality rice for households and retailers.
+          We provide affordable and reliable rice delivery services.
+        </p>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h5>Contact Us</h5>
+        <p class="mb-1">📞 0936-204-7214</p>
+        <p class="mb-1">📞 0922-575-5838</p>
+        <p class="mb-1">📍 Sta Maria, Sta Ana, Paroba St. Pampanga Philippines</p>
+        <p class="mb-0">
+          <a href="mailto:jhonamangune@gmail.com" class="text-decoration-none">
+            jhonamangune@gmail.com
+          </a>
+        </p>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h5>Follow Us</h5>
+        <div class="d-flex gap-3 justify-content-md-start justify-content-center">
+          <a href="https://www.facebook.com/jmangune"><img src="social-media/facebook.svg" width="30"></a>
+          <a href="https://www.instagram.com/kimbalatbat?igsh=MTF4bXljaHZyZzZicA=="><img src="social-media/instagram.svg" width="30"></a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="border-light">
+
+    <div class="text-center">
+      <p class="mb-0">&copy; 2026 JBM Palay Trading | All Rights Reserved</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+window.addEventListener("load", function () {
+  const loader = document.getElementById("loader");
+
+  setTimeout(() => {
+    loader.classList.add("loader-hidden");
+  }, 1200); // adjust speed here
+});
+</script>
+
+<script>
+const themeToggle = document.getElementById("themeToggle");
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme) {
+  document.body.classList.add(savedTheme);
+} else {
+  document.body.classList.add("light-mode");
+}
+
+function updateThemeIcon() {
+  if (document.body.classList.contains("dark-mode")) {
+    themeToggle.textContent = "☀️";
+  } else {
+    themeToggle.textContent = "🌙";
+  }
+}
+
+updateThemeIcon();
+
+themeToggle.addEventListener("click", function () {
+  if (document.body.classList.contains("dark-mode")) {
+    document.body.classList.remove("dark-mode");
+    document.body.classList.add("light-mode");
+    localStorage.setItem("theme", "light-mode");
+  } else {
+    document.body.classList.remove("light-mode");
+    document.body.classList.add("dark-mode");
+    localStorage.setItem("theme", "dark-mode");
+  }
+
+  updateThemeIcon();
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

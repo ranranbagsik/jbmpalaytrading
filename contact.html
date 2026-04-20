@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | JBM Palay Trading</title>
+  <link rel="icon" type="image/png" href="logo/p5.png">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="theme.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg glass-navbar fixed-top">
+  <div class="container">
+
+    <a class="navbar-brand" href="index.html">
+      <img src="logo/p5.png" class="navbar-logo">
+    </a>
+
+    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+  <ul class="navbar-nav ms-auto">
+    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+    <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+    <li class="nav-item"><a class="nav-link" href="process.html">Process</a></li>
+    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+  </ul>
+
+  <div class="theme-toggle ms-lg-3 mt-3 mt-lg-0">
+    <button id="themeToggle" class="theme-btn" type="button" aria-label="Toggle dark mode">
+      🌙
+    </button>
+  </div>
+</div>
+</nav>
+
+<!-- LOADER -->
+<div id="loader">
+  <img src="logo/p5.png" alt="Loading..." class="loader-logo">
+</div>
+
+
+
+<!-- HERO -->
+<section class="hero text-white">
+  <div class="container text-center">
+    <div class="glass-box p-5 animate-fade">
+      <h1 class="fw-bold">Contact Us</h1>
+      <p class="lead">We’re here to help you anytime</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="container my-5">
+  <div class="glass-box p-5 animate-slide">
+
+    <h2 class="text-center mb-4">Send Message</h2>
+
+<form id="contactForm" action="https://formsubmit.co/jhonamangune1@gmail.com" method="POST">
+
+  <input type="hidden" name="_captcha" value="false">
+
+  <div class="mb-3">
+    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+  </div>
+
+  <div class="mb-3">
+    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+  </div>
+
+  <div class="mb-3">
+    <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+  </div>
+
+<button type="submit" class="btn btn-dark w-100" id="sendBtn">
+  <span id="btnText">Send Message</span>
+  <span id="spinner" class="spinner"></span>
+</button>
+
+</form>
+  </div>
+</section>
+
+<div id="popup" class="popup">
+  <div class="popup-box">
+    <h3>✅ Message Sent!</h3>
+    <p>Thank you for contacting us.</p>
+    <button onclick="closePopup()">OK</button>
+  </div>
+</div>
+
+<a href="https://m.me/jmangune" class="chat-btn" target="_blank">💬</a>
+
+
+<!-- FOOTER -->
+<footer class="pt-5 pb-3">
+  <div class="container">
+    <div class="row text-center text-md-start">
+
+      <!-- Business Info -->
+      <div class="col-md-4 mb-4">
+        <h5>JBM Rice Supplier</h5>
+        <p>
+          Trusted supplier of high-quality rice for households and retailers.
+          We provide affordable and reliable rice delivery services.
+        </p>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-4 mb-4">
+        <h5>Contact Us</h5>
+        <p class="mb-1">📞 0936-204-7214</p>
+        <p class="mb-1">📞 0922-575-5838</p>
+        <p class="mb-1">📍 Sta Maria, Sta Ana, Paroba St. Pampanga Philippines</p>
+        <p class="mb-0">
+          <a href="mailto:jhonamangune@gmail.com" class="text-decoration-none">
+            jhonamangune@gmail.com
+          </a>
+        </p>
+      </div>
+
+      <!-- Social Media -->
+      <div class="col-md-4 mb-4">
+        <h5>Follow Us</h5>
+        <div class="d-flex gap-3 justify-content-md-start justify-content-center">
+          <a href="https://www.facebook.com/jmangune"><img src="social-media/facebook.svg" width="30"></a>
+          <a href="https://www.instagram.com/kimbalatbat?igsh=MTF4bXljaHZyZzZicA=="><img src="social-media/instagram.svg" width="30"></a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="border-light">
+
+    <div class="text-center">
+      <p class="mb-0">&copy; 2026 JBM Palay Trading | All Rights Reserved</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const form = document.getElementById("contactForm");
+const popup = document.getElementById("popup");
+
+form.addEventListener("submit", function () {
+
+  // show popup AFTER short delay (lets form submit first)
+  setTimeout(() => {
+    popup.style.display = "flex";
+    form.reset();
+  }, 1200);
+
+});
+
+function closePopup() {
+  popup.style.display = "none";
+}
+</script>
+
+<script>
+const form = document.getElementById("contactForm");
+const popup = document.getElementById("popup");
+const btnText = document.getElementById("btnText");
+const spinner = document.getElementById("spinner");
+const sendBtn = document.getElementById("sendBtn");
+
+form.addEventListener("submit", function () {
+
+  // SHOW LOADING STATE
+  btnText.innerText = "Sending...";
+  spinner.style.display = "inline-block";
+  sendBtn.disabled = true;
+
+  // simulate delay so UI feels smooth
+  setTimeout(() => {
+
+    popup.style.display = "flex";
+
+    // RESET FORM
+    form.reset();
+
+    // RESET BUTTON
+    btnText.innerText = "Send Message";
+    spinner.style.display = "none";
+    sendBtn.disabled = false;
+
+  }, 1500);
+
+});
+
+function closePopup() {
+  popup.style.display = "none";
+}
+</script>
+
+
+<script>
+window.addEventListener("load", function () {
+  const loader = document.getElementById("loader");
+
+  setTimeout(() => {
+    loader.classList.add("loader-hidden");
+  }, 1200); // adjust speed here
+});
+</script>
+
+<script>
+const themeToggle = document.getElementById("themeToggle");
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme) {
+  document.body.classList.add(savedTheme);
+} else {
+  document.body.classList.add("light-mode");
+}
+
+function updateThemeIcon() {
+  if (document.body.classList.contains("dark-mode")) {
+    themeToggle.textContent = "☀️";
+  } else {
+    themeToggle.textContent = "🌙";
+  }
+}
+
+updateThemeIcon();
+
+themeToggle.addEventListener("click", function () {
+  if (document.body.classList.contains("dark-mode")) {
+    document.body.classList.remove("dark-mode");
+    document.body.classList.add("light-mode");
+    localStorage.setItem("theme", "light-mode");
+  } else {
+    document.body.classList.remove("light-mode");
+    document.body.classList.add("dark-mode");
+    localStorage.setItem("theme", "dark-mode");
+  }
+
+  updateThemeIcon();
+});
+</script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>

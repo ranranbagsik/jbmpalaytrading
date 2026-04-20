@@ -1,0 +1,242 @@
+/* ===============================
+   GLOBAL THEME (LIGHT + DARK)
+================================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* LIGHT MODE */
+body.light-mode {
+  background: linear-gradient(90deg, #C97D2A, #F7EBA1);
+  color: #111;
+}
+
+/* DARK MODE */
+body.dark-mode {
+  background: linear-gradient(90deg, #1f1f1f, #2e2e2e);
+  color: #f5f5f5;
+  transition: all 0.4s ease;
+}
+
+/* ===============================
+   NAVBAR
+================================= */
+body.dark-mode .glass-navbar {
+  background: rgba(20, 20, 20, 0.45);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+body.dark-mode .glass-navbar .nav-link {
+  color: #f5f5f5;
+}
+
+body.dark-mode .glass-navbar .nav-link:hover {
+  background: rgba(201,125,42,0.9);
+  color: #fff;
+}
+
+body.dark-mode .glass-navbar .nav-link.active {
+  background: #C97D2A;
+  color: #fff;
+}
+
+body.dark-mode .custom-toggler .bar {
+  background-color: #fff;
+}
+
+/* ===============================
+   GLASS / CARDS
+================================= */
+body.dark-mode .glass-box,
+body.dark-mode .product-card,
+body.dark-mode .variety-card,
+body.dark-mode .process-text-box,
+body.dark-mode .process-media-box,
+body.dark-mode .management-card,
+body.dark-mode .overlay-content,
+body.dark-mode .glass-modal {
+  background: rgba(255,255,255,0.08) !important;
+  color: #f5f5f5 !important;
+  border-color: rgba(255,255,255,0.12) !important;
+}
+
+/* ===============================
+   TEXT FIX
+================================= */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode span,
+body.dark-mode a,
+body.dark-mode label {
+  color: #f5f5f5 !important;
+}
+
+/* ===============================
+   FORMS
+================================= */
+body.dark-mode .form-control {
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+}
+
+body.dark-mode .form-control::placeholder {
+  color: #ccc;
+}
+
+/* ===============================
+   MODALS / POPUPS
+================================= */
+body.dark-mode .modal-content,
+body.dark-mode .popup-box {
+  background: rgba(30,30,30,0.95);
+  color: #fff;
+}
+
+body.dark-mode .btn-close {
+  filter: invert(1);
+}
+
+/* ===============================
+   BUTTONS
+================================= */
+body.dark-mode .btn,
+body.dark-mode .btn-dark,
+body.dark-mode .btn-order,
+body.dark-mode .btn-nav {
+  background: #C97D2A;
+  color: #fff;
+}
+
+/* ===============================
+   LOADER
+================================= */
+body.dark-mode #loader {
+  background: linear-gradient(90deg, #1f1f1f, #2e2e2e);
+}
+
+/* ===============================
+   CHAT BUTTON
+================================= */
+body.dark-mode .chat-btn {
+  background: #C97D2A;
+  color: #fff;
+}
+
+/* ===============================
+   FOOTER
+================================= */
+body.dark-mode footer {
+  background: rgba(15,15,15,0.6);
+  color: #f5f5f5;
+}
+
+body.dark-mode footer a {
+  color: #f5f5f5;
+}
+
+body.dark-mode footer a:hover {
+  color: #fff;
+}
+
+body.dark-mode footer hr {
+  border-color: rgba(255,255,255,0.15);
+}
+body.dark-mode .hero::before {
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.5)
+  );
+}
+/* ===============================
+   INTRO SCREEN
+================================= */
+
+#intro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(90deg, #C97D2A, #F7EBA1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  transition: opacity 0.6s ease;
+}
+
+/* Dark mode */
+body.dark-mode #intro {
+  background: linear-gradient(90deg, #1f1f1f, #2e2e2e);
+}
+
+.intro-content {
+  text-align: center;
+}
+
+/* Logo */
+.intro-logo {
+  width: 120px;
+  margin-bottom: 20px;
+  animation: pulse 1.2s infinite;
+}
+
+/* LOADING DOTS */
+.loading-dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.loading-dots span {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  animation: bounce 0.6s infinite alternate;
+}
+
+.loading-dots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loading-dots span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); opacity: 0.5; }
+  to { transform: translateY(-10px); opacity: 1; }
+}
+
+/* START BUTTON */
+#startBtn {
+  display: none;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px 25px;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#startBtn:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* Hide intro */
+.intro-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
