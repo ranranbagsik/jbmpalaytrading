@@ -240,3 +240,22 @@ body.dark-mode #intro {
   opacity: 0;
   pointer-events: none;
 }
+/* Force Owner & Assistant + Nav buttons to solid black in dark mode */
+body.dark-mode .btn-order,
+body.dark-mode .btn-nav {
+  background: #000 !important;   /* solid black */
+  color: #fff !important;        /* white text */
+  border: none !important;
+}
+
+/* Light mode: keep original black */
+body.light-mode img[src*="facebook.svg"],
+body.light-mode img[src*="instagram.svg"] {
+  filter: none;
+}
+
+/* Dark mode: invert to white */
+body.dark-mode img[src*="facebook.svg"],
+body.dark-mode img[src*="instagram.svg"] {
+  filter: invert(1) brightness(2);
+}

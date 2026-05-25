@@ -392,3 +392,12 @@ footer hr {
   visibility: hidden;
   transition: opacity 0.8s ease, visibility 0.8s ease;
 }
+/* Social icons fix */
+body.light-mode .social-icon {
+  filter: none;              /* keep original (black) in light mode */
+}
+
+body.dark-mode .social-icon {
+  filter: invert(1) brightness(2); /* turn black icons into white */
+}
+
