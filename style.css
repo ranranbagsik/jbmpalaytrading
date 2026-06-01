@@ -331,6 +331,30 @@ footer img:hover {
 footer hr {
   border-color: rgba(0, 0, 0, 0.2);
 }
+.footer-logo {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    display: block;
+}
+
+
+.footer-logo:hover {
+    transform: scale(1.1);
+}
+
+
+.footer-logo.ua {
+    width: 60px;
+    height: 60px;
+}
+
+.footer-logo.cit {
+    width: 73px;  
+    height: 73px;
+    object-fit: contain;
+}
+
 /* LOADER SCREEN */
 #loader {
   position: fixed;
